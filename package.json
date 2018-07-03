@@ -1,0 +1,57 @@
+{
+  "name": "placeholder",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint:fix": "eslint --fix ./src || true",
+    "lint": "eslint ./src || true",
+    "flow-coverage": "flow-coverage-report || true",
+    "gitlab:lint": "eslint ./src",
+    "gitlab:coverage": "flow-coverage-report",
+    "postinstall": "flow-typed install"
+  },
+  "dependencies": {
+    "history": "^4.7.2",
+    "normalize.css": "^8.0.0",
+    "prop-types": "^15.6.2",
+    "react": "16.4.1",
+    "react-dom": "16.4.1",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-i18n": "^1.5.13",
+    "redux-persist": "^5.10.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-eslint": "8.2.5",
+    "babel-jest": "23.2.0",
+    "babel-preset-flow": "6.23.0",
+    "babel-preset-react": "6.24.1",
+    "eslint": "5.0.1",
+    "eslint-plugin-flowtype": "2.49.3",
+    "eslint-plugin-react": "7.10.0",
+    "flow-bin": "0.75.0",
+    "flow-coverage-report": "0.5.0",
+    "flow-typed": "2.4.0",
+    "redux-freeze": "^0.1.5",
+    "redux-logger": "^3.0.6"
+  },
+  "flow-coverage-report": {
+    "flowCommandPath": "./node_modules/.bin/flow",
+    "includeGlob": [
+      "src/**/*.js",
+      "src/**/*.jsx"
+    ],
+    "excludeGlob": [],
+    "type": [
+      "text"
+    ]
+  }
+}
