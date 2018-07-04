@@ -7,11 +7,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "lint:fix": "eslint --fix ./src || true",
     "lint": "eslint ./src || true",
+    "lint:fix": "eslint --fix ./src || true",
     "flow:coverage": "flow-coverage-report || true",
     "gitlab:lint": "eslint ./src",
     "gitlab:coverage": "flow-coverage-report",
+    "gitlab:start": "node server",
     "postinstall": "flow-typed install"
   },
   "dependencies": {
