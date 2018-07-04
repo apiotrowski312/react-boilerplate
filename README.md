@@ -8,3 +8,5 @@ This boilerplate contains full configured and working flow, babel, redux with al
 
 * add Prettier
 * add Git Hooks with linting
+* add Dockerfile
+* add basic gitlab-ci file
