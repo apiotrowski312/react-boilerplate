@@ -8,10 +8,10 @@ This boilerplate contains full configured and working flow, babel, redux with al
 * redux store
 * redux-I18n
 * flow + flow-types
+* basic gitlabCi file
 
 
 ### TO DO:
 
 * add Prettier
 * add Git Hooks with linting
-* add basic gitlab-ci file

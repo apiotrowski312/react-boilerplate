@@ -1,0 +1,72 @@
+stages:
+  - test
+  - build
+  - deploy
+
+flow-coverage:
+  stage: test
+  image: alpine:3.7
+  tags:
+    - test
+  cache:
+    paths:
+      - apk-cache/
+      - node_modules/
+  before_script:
+    - apk add --update nodejs
+    - apk add nodejs-npm
+    - npm install
+  script:
+    - npm run gitlab:coverage | grep APP_NAME
+  coverage: '/APP_NAME.+([0-9\s]{3}%)/'
+
+eslint-coverage:
+  stage: test
+  image: alpine:3.7
+  tags:
+    - test
+  cache:
+    paths:
+      - apk-cache/
+      - node_modules/
+  before_script:
+    - apk add --update nodejs
+    - apk add nodejs-npm
+    - npm install
+  script:
+    - npm run gitlab:lint
+
+build_app:
+  stage: build
+  tags:
+    - build
+  only:
+    - develop
+  except:
+    - schedules
+  variables:
+    BUILD_REF: $CI_BUILD_REF
+    PIPELINE_ID: $CI_PIPELINE_ID
+  before_script:
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.XXXXX.XX
+  script:
+    - docker build -t PLACEHOLDER .
+    - docker push PLACEHOLDER
+
+deploy_develop_web:
+  stage: deploy
+  tags:
+    - deploy_develop
+  only:
+    - develop
+  except:
+    - schedules
+  environment: develop
+  before_script:
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.XXXXX.XX
+  script:
+    - docker pull PLACEHOLDER
+    - docker stop NAME_PLACEHOLDER || true
+    - docker rm NAME_PLACEHOLDER || true
+    - docker run --name NAME_PLACEHOLDER -d --restart always PLACEHOLDER
+
