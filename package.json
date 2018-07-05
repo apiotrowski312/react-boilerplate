@@ -53,11 +53,17 @@
   },
   "flow-coverage-report": {
     "flowCommandPath": "./node_modules/.bin/flow",
+    "threshold": 50,
     "includeGlob": [
       "src/**/*.js",
       "src/**/*.jsx"
     ],
-    "excludeGlob": [],
+    "excludeGlob": [
+      "src/translations.js",
+      "src/store.js",
+      "src/registerServiceWorker.js",
+      "src/index.js"
+    ],
     "type": [
       "text"
     ]
