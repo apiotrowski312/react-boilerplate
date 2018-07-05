@@ -17,7 +17,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "eslint ./src --ext js,jsx"
+      "pre-commit": "npm run gitlab:lint"
     }
   },
   "dependencies": {
