@@ -62,7 +62,6 @@
     "react/jsx-no-bind": ["warn", {"allowArrowFunctions": true}],
     "react/jsx-no-literals": "error",
     "react/jsx-sort-props": ["error", {"callbacksLast": true, "shorthandLast": true, "ignoreCase": true}],
-    "react/jsx-space-before-closing": ["warn", "never"],
     "react/jsx-tag-spacing": ["warn", { "closingSlash": "never", "beforeSelfClosing": "never", "afterOpening": "never" }],
     "react/jsx-wrap-multilines": "off",
     "react/no-multi-comp": ["warn", { "ignoreStateless": true }],
