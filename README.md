@@ -15,3 +15,6 @@ This boilerplate contains full configured and working flow, babel, redux with al
 
 * add Prettier
 * add Git Hooks with linting
+* add tutorial for flow etc.
+
+https://medium.com/netscape/secret-flow-types-86b2ebb30951
