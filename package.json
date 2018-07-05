@@ -1,16 +1,16 @@
 {
   "name": "placeholder",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "lint": "eslint ./src || true",
-    "lint:fix": "eslint --fix ./src || true",
+    "lint": "eslint ./src --ext js,jsx || true",
+    "lint:fix": "eslint --fix ./src --ext js,jsx || true",
     "flow:coverage": "flow-coverage-report || true",
-    "gitlab:lint": "eslint ./src",
+    "gitlab:lint": "eslint ./src --ext js,jsx",
     "gitlab:coverage": "flow-coverage-report",
     "gitlab:start": "node server",
     "postinstall": "flow-typed install"
