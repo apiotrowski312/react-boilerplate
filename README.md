@@ -1,20 +1,50 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+# React with Flow and Eslint Boilerplate for Gitlab
 
-This boilerplate contains full configured and working flow, babel, redux with already created store and redux-i18n
+<a href="https://reactjs.org" target="_blank">
+  <img src="https://cdn.worldvectorlogo.com/logos/react.svg" height="50" />
+</a>
+<a href="http://eslint.org" target="_blank">
+  <img src="https://cdn.worldvectorlogo.com/logos/eslint.svg" height="50" />
+</a>
+<a href="https://babeljs.io" target="_blank">
+  <img src="https://raw.githubusercontent.com/babel/logo/master/babel.png"
+  height="50" />
+</a>
+<a href="https://flow.org/en/" target="_blank">
+  <img src="https://cdn.worldvectorlogo.com/logos/flow.svg" height="50" />
+</a>
+<a href="https://www.docker.com" target="_blank">
+  <img src="https://cdn.worldvectorlogo.com/logos/docker.svg" height="50" />
+</a>
+<a href="https://redux.js.org" target="_blank">
+  <img src="https://cdn.worldvectorlogo.com/logos/redux.svg" height="50" />
+</a>
+<a href="https://about.gitlab.com/features/gitlab-ci-cd/" target="_blank">
+  <img src="https://cdn.worldvectorlogo.com/logos/gitlab.svg" height="50" />
+</a>
 
-### DONE:
-* Dockerfile
-* eslint, babel
-* redux store
-* redux-I18n
-* flow + flow-types
-* basic gitlabCi file
+## Features
+
+## Components
+
+- [Babel](https://babeljs.io) for ES6 support.
+- [ESlint](http://eslint.org) for ES6 linting.
+- [React](https://reactjs.org) as front-end view library.
+- [Husky](https://github.com/typicode/husky) as easy git hooks provider.
+- [Flow](https://flow.org/en/) for type linting.
+- [Redux](https://redux.js.org)
+- [redux-I18n](https://github.com/APSL/redux-i18n) as a internationalization provider.
+- [redux-thunk](https://github.com/reduxjs/redux-thunk) as a middleware
+- [Docker](https://www.docker.com) as a solution for app working everywhere.
+- [Gitlab-ci](https://about.gitlab.com/features/gitlab-ci-cd/) as a CI/CD tool
+
+## Getting Start
 
 
 ### TO DO:
 
 * add Prettier
-* add Git Hooks with linting
-* add tutorial for flow etc.
+* add tutorial for flow, running etc.
+* less compiler
 
 https://medium.com/netscape/secret-flow-types-86b2ebb30951
