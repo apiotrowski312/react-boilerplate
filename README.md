@@ -64,6 +64,11 @@
 `gitlab:*` - throw errors on fail
 
 
+## flow-coverage-report
+
+You can change `threshold` inside package.json to change necessary % of coverage 
+
+
 ### TO DO:
 
 * add Prettier
