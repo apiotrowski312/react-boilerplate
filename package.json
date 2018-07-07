@@ -11,7 +11,7 @@
     "flow:coverage": "flow-coverage-report || true",
     "gitlab:lint": "eslint ./src --ext js,jsx",
     "gitlab:coverage": "flow-coverage-report",
-    "gitlab:start": "node server",
+    "gitlab:start": "serve -s build -l 3000",
     "postinstall": "flow-typed install"
   },
   "husky": {
@@ -32,7 +32,8 @@
     "redux": "4.0.0",
     "redux-i18n": "1.5.13",
     "redux-persist": "5.10.0",
-    "redux-thunk": "2.3.0"
+    "redux-thunk": "2.3.0",
+    "serve": "9.2.0"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
