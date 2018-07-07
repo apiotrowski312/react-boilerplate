@@ -7,15 +7,15 @@ RUN apk add --no-cache --update \
       nodejs \
       nodejs-npm
 
-COPY ./src /srv/app
+COPY . /app/
 
-WORKDIR /srv/app
+WORKDIR /app/
 
-RUN npm i --no-optional -S express morgan
 RUN npm install
+RUN npm install express morgan
 RUN npm run build
 
 EXPOSE 3000
 
-CMD ["npm", "run", "start:server"]
+CMD ["npm", "run", "gitlab:start"]
 

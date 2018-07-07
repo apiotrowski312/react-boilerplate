@@ -46,7 +46,7 @@
     "flow-bin": "0.75.0",
     "flow-coverage-report": "0.5.0",
     "flow-typed": "2.4.0",
-    "husky": "^1.0.0-rc.12",
+    "husky": "1.0.0-rc.12",
     "redux-freeze": "0.1.5",
     "redux-logger": "3.0.6"
   },
