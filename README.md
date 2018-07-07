@@ -24,7 +24,6 @@
   <img src="https://cdn.worldvectorlogo.com/logos/gitlab.svg" height="50" />
 </a>
 
-***
 
 ## Features
 
@@ -34,7 +33,6 @@
 - basic Dockerfile for app,
 - basic gitlab-ci
 
-***
 
 ## Components
 
@@ -49,7 +47,6 @@
 - [Docker](https://www.docker.com) as a solution for app working everywhere.
 - [Gitlab-ci](https://about.gitlab.com/features/gitlab-ci-cd/) as a CI/CD tool
 
-***
 
 ## Getting Start
 
@@ -60,7 +57,6 @@
   npm start | yarn start
 ```
 
-***
 
 ## Availible commands
 
@@ -78,7 +74,6 @@
 
 `gitlab:*` - throw errors on fail
 
-***
 
 ## Flow
 
@@ -89,7 +84,6 @@ You can change `threshold` inside package.json to change necessary % of coverage
 ### some basics of Flow:
 [Roman Krivtsov about Secret Flow Types](https://medium.com/netscape/secret-flow-types-86b2ebb30951)
 
-***
 
 ### TO DO:
 
