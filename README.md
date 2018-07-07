@@ -26,6 +26,16 @@
 
 ***
 
+## Features
+
+- git hooks before push(linting) and commit(coverage),
+- eslint with integrated Flow,
+- react/redux/i18n/thunk,
+- basic Dockerfile for app,
+- basic gitlab-ci
+
+***
+
 ## Components
 
 - [Babel](https://babeljs.io) for ES6 support.
