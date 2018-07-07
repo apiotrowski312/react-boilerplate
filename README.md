@@ -1,5 +1,6 @@
 # React with Flow and Eslint Boilerplate for Gitlab
 
+
 <a href="https://reactjs.org" target="_blank">
   <img src="https://cdn.worldvectorlogo.com/logos/react.svg" height="50" />
 </a>
@@ -23,7 +24,7 @@
   <img src="https://cdn.worldvectorlogo.com/logos/gitlab.svg" height="50" />
 </a>
 
-## Features
+***
 
 ## Components
 
@@ -38,6 +39,8 @@
 - [Docker](https://www.docker.com) as a solution for app working everywhere.
 - [Gitlab-ci](https://about.gitlab.com/features/gitlab-ci-cd/) as a CI/CD tool
 
+***
+
 ## Getting Start
 
 ```bash
@@ -46,6 +49,8 @@
   npm install | yarn
   npm start | yarn start
 ```
+
+***
 
 ## Availible commands
 
@@ -63,16 +68,22 @@
 
 `gitlab:*` - throw errors on fail
 
+***
 
-## flow-coverage-report
+## Flow
 
-You can change `threshold` inside package.json to change necessary % of coverage 
+### flow-coverage-report:
 
+You can change `threshold` inside package.json to change necessary % of coverage.
+
+### some basics of Flow:
+[Roman Krivtsov about Secret Flow Types](https://medium.com/netscape/secret-flow-types-86b2ebb30951)
+
+***
 
 ### TO DO:
 
 * add Prettier
-* add tutorial for flow, running etc.
 * less compiler
 
-https://medium.com/netscape/secret-flow-types-86b2ebb30951
+
