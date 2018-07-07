@@ -40,6 +40,29 @@
 
 ## Getting Start
 
+```bash
+  git clone git@github.com:apiotrowski312/react-boilerplate.git
+  cd react-boilerplate
+  npm install | yarn
+  npm start | yarn start
+```
+
+## Availible commands
+
+`start` - run app
+
+`build` - create optimalized production build
+
+`test` - run tests
+
+`lint` - show all lint errors inside ./src
+
+`lint:fix` - show all lint errors inside ./src and autofix them if possible
+
+`flow:coverage` - run coverage-report for flow
+
+`gitlab:*` - throw errors on fail
+
 
 ### TO DO:
 

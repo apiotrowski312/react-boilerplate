@@ -6,7 +6,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
     "lint": "eslint ./src --ext js,jsx || true",
     "lint:fix": "eslint --fix ./src --ext js,jsx || true",
     "flow:coverage": "flow-coverage-report || true",
